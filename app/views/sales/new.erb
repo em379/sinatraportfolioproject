@@ -1,0 +1,16 @@
+<html>
+<head>
+  <h2>Post Sales</h2>
+  <form action="/sales" method="post">
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+    <p>Business Name:<input type="text" name="business_name"></p>
+    <p>Location:<input type="text" name="location" placeholder="address"></p>
+    <input type="text" name="city" placeholder="city, state">
+    <p>Website:<input type="text" name="website"></p>
+
+    <label for="sale"> Sale Advertisement:</label><textarea name="sale" rows="8" cols="20"></textarea>
+    <input type="submit" value="Submit">
+
+  </form>
+</head>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<div style='float: right;'><a href="/logout">Log Out</a></div>
+
+<form action='/database' method='post'>
+  <h1>Advertised Sales</h1>
+  <% @sales.each do |sale| %>
+  <h2><em><%= sale.business_name %> </em> </h2>
+  <h3><%= sale.website %> </h3>
+  <h3><%= sale.location %> </h3>
+  <h3><%= sale.sale %> </h3>
+  <% end %>
+
+</form>
+</html>
